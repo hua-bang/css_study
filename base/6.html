@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1[title="houdunren"][id]{
+            color: red;
+        }
+        h1[title$=".com"][id]{
+            color: green;
+        }
+        h1[title*="hug"]{
+            color: indianred;
+        }
+        h1[title~="h"]{
+            color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 title="houdunren" id>后盾人</h1>
+            <h1 title="houdunren.com" id>测试</h1>
+            <h1 title="www.hug.cn" id>hug</h1>
+            <h1 title="h hug" id>hug</h1>
+            <aside>
+                <h2>houdunren.com</h2>
+            </aside>
+            <h2>hdcms.com</h2>
+        </article>
+    </main>
+</body>
+</html>
